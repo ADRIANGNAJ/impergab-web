@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Impergab">
+<meta property="og:title" content="Impergab | Impermeabilización y tratamiento del concreto">
+<meta property="og:description" content="Soluciones integrales de impermeabilización desde 2002. Asesoría técnica, dictamen, supervisión y coordinación en obra.">
+<meta property="og:image" content="img-hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img-logo.png">
+<title>Impergab | Impermeabilización y tratamiento del concreto</title>
+<meta name="description" content="Impergab: soluciones integrales de impermeabilización, tratamiento del concreto y superficies desde 2002. Asesoría técnica, dictamen, supervisión y coordinación en obra.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: light, clean, technical. Warm paper ground, the brand's deep blue and one orange accent.
+   Hero and process go dark navy for rhythm. Display: Barlow Condensed. Body: Instrument Sans. Data: JetBrains Mono. */
+:root{
+  --blue:#025581;--navy:#00233f;--navy2:#07324f;--orange:#EA7506;--orange2:#D96705;
+  --paper:#F5F3EE;--white:#fff;--ink:#0B1A27;--mute:#5D6C79;--line:rgba(0,35,63,.12);--line-d:rgba(255,255,255,.14);
+  --f-d:'Barlow Condensed','Arial Narrow',sans-serif;--f-b:'Instrument Sans',system-ui,sans-serif;--f-m:'JetBrains Mono',ui-monospace,monospace;
+  --e:cubic-bezier(.22,1,.36,1);--g:clamp(16px,4vw,48px);--max:1280px;--r:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-b);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{width:100%;max-width:calc(var(--max) + 2*var(--g));margin-inline:auto;padding-inline:var(--g)}
+.mono{font-family:var(--f-m);font-size:.72rem;letter-spacing:.04em;text-transform:uppercase}
+.disp{font-family:var(--f-d);font-weight:700;text-transform:uppercase;line-height:.92;letter-spacing:.005em;margin:0}
+.h2{font-size:clamp(2.6rem,6vw,5.2rem)}
+.ln-mask{padding-top:.14em;margin-top:-.14em}
+.tag{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f-m);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
+.tag::before{content:"//";color:var(--orange)}
+.lead{color:var(--mute);font-size:1.05rem;max-width:34rem;margin:0}
+.btn{display:inline-flex;align-items:center;gap:.7rem;white-space:nowrap;padding:.8rem .9rem .8rem 1.2rem;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:0;cursor:pointer;transition:transform .4s var(--e),box-shadow .4s,background .3s,color .3s;font-family:var(--f-b)}
+.btn i{flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;font-style:normal;font-size:.95rem;transition:transform .4s var(--e)}
+.btn:hover i{transform:translateX(3px) rotate(-8deg)}
+.btn--or{background:var(--orange);color:#fff;box-shadow:0 14px 34px -14px rgba(234,117,6,.9)}.btn--or i{background:#fff;color:var(--orange)}
+.btn--or:hover{background:var(--orange2);transform:translateY(-2px)}
+.btn--bl{background:var(--navy);color:#fff}.btn--bl i{background:var(--orange);color:#fff}.btn--bl:hover{background:var(--blue);transform:translateY(-2px)}
+.btn--gh{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}.btn--gh i{background:rgba(255,255,255,.18);color:#fff}
+.btn--gh:hover{background:rgba(255,255,255,.22)}
+.sec{padding:clamp(4.5rem,10vw,9rem) 0}
+.head{display:flex;flex-direction:column;gap:1rem;margin-bottom:clamp(2rem,4vw,3.5rem)}
+.head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
+
+/* top bar + nav */
+.top{position:relative;z-index:61;background:var(--navy);color:#cfe0ec;font-size:.8rem}
+.top .wrap{display:flex;justify-content:space-between;gap:1rem;padding-block:.5rem;flex-wrap:wrap}
+.top a{text-decoration:none}.top a:hover{color:#fff}.top b{color:var(--orange);font-weight:600}
+.top .mid{display:flex;gap:1.4rem;flex-wrap:wrap}
+.nav{position:fixed;left:50%;top:calc(2.6rem + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:60;width:min(100% - 2*var(--g),1060px);display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.4rem .45rem .4rem .9rem;border-radius:999px;background:rgba(255,255,255,.86);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 10px 40px -16px rgba(0,35,63,.45),inset 0 0 0 1px rgba(0,35,63,.08);transition:top .5s var(--e)}
+.nav.up{top:.8rem}
+.brand img{height:34px;width:auto}
+.nav-links{display:flex;gap:.2rem}
+.nav-links a{padding:.5rem .8rem;border-radius:999px;font-size:.88rem;font-weight:500;text-decoration:none;color:var(--ink);transition:background .3s,color .3s}
+.nav-links a:hover,.nav-links a.on{background:rgba(2,85,129,.09);color:var(--blue)}
+.burger{display:none;width:42px;height:42px;border-radius:50%;border:0;background:var(--navy);cursor:pointer;position:relative}
+.burger i,.burger i::before{content:"";position:absolute;left:12px;right:12px;height:2px;background:#fff;top:20px;transition:transform .4s var(--e)}.burger i::before{left:0;right:0;top:-6px}
+.menu-open .burger i{transform:rotate(45deg)}.menu-open .burger i::before{transform:translateY(6px) rotate(-90deg)}
+
+/* hero */
+.hero{position:relative;padding:0 10px 10px;background:var(--paper)}
+.hero-frame{position:relative;min-height:max(700px,calc(100svh - 2.6rem - 20px));border-radius:30px;overflow:hidden;isolation:isolate;background:var(--navy);display:flex;flex-direction:column;justify-content:flex-end}
+.hero-img{position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;z-index:0;will-change:transform}
+/* lente antes / después */
+.hero-lens{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none;--lx:50%;--ly:64%;--lr:0px;-webkit-mask-image:radial-gradient(circle var(--lr) at var(--lx) var(--ly),#000 0,#000 64%,rgba(0,0,0,.45) 86%,transparent 100%);mask-image:radial-gradient(circle var(--lr) at var(--lx) var(--ly),#000 0,#000 64%,rgba(0,0,0,.45) 86%,transparent 100%);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+.hero-lens img{inset:-2% 0}
+.lens-ring{position:absolute;left:0;top:0;z-index:3;--d:0px;--lx:0px;--ly:0px;width:var(--d);height:var(--d);margin:calc(var(--d) / -2) 0 0 calc(var(--d) / -2);translate:var(--lx) var(--ly);border-radius:50%;border:1px solid rgba(255,255,255,.5);box-shadow:0 18px 60px rgba(0,35,63,.35);opacity:0;pointer-events:none;transition:opacity .4s}
+.lens-ring b{position:absolute;left:50%;top:-.85rem;transform:translateX(-50%);font-family:var(--f-m);font-weight:400;font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--orange);padding:.3rem .6rem;border-radius:999px;white-space:nowrap}
+.lens-hint{position:absolute;left:50%;top:44%;z-index:3;transform:translateX(-50%);display:flex;align-items:center;gap:.55rem;padding:.5rem .85rem;border-radius:999px;background:rgba(0,35,63,.42);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.26);color:#fff;font-family:var(--f-m);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;pointer-events:none;transition:opacity .5s ease,transform .5s ease}
+.lens-hint::before{content:"";width:11px;height:11px;border-radius:50%;border:1px solid rgba(255,255,255,.85);animation:lpulse 2.2s ease-in-out infinite}
+@keyframes lpulse{0%,100%{transform:scale(.65);opacity:.45}50%{transform:scale(1.3);opacity:1}}
+.lens-hint.off{opacity:0;transform:translateX(-50%) translateY(-10px)}
+@media (hover:none),(prefers-reduced-motion:reduce){.lens-hint{display:none}}
+@media (hover:none){.lens-ring{display:none}}
+.hero-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,35,63,.55) 0%,rgba(0,35,63,.05) 30%,rgba(0,35,63,.35) 62%,rgba(0,35,63,.92) 100%),linear-gradient(90deg,rgba(0,35,63,.6),transparent 60%)}
+#rain{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+.hero-in{position:relative;z-index:3;padding-bottom:1.4rem}
+.hero-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end}
+.hero h1{font-size:clamp(2.4rem,7vw,7.6rem);color:#fff;max-width:100%;width:max-content;text-shadow:0 8px 40px rgba(0,35,63,.35)}
+.hero h1 em{font-style:normal;color:var(--orange);display:block;white-space:nowrap}
+.hero-sub{margin:1.1rem 0 1.5rem;color:#dbe8f1;max-width:34rem;font-size:clamp(1rem,1.3vw,1.15rem)}
+.hero-ctas{display:flex;gap:.6rem;flex-wrap:wrap}
+.hcard{width:300px;padding:.7rem;border-radius:20px;background:rgba(255,255,255,.14);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);display:grid;grid-template-columns:84px 1fr;gap:.8rem;align-items:center;color:#fff;margin-bottom:.3rem}
+.hcard img{width:84px;height:84px;border-radius:14px;object-fit:cover}
+.hcard p{margin:0;font-size:.88rem;line-height:1.3;font-weight:500}
+.hcard a{display:inline-block;margin-top:.4rem;color:var(--orange);font-weight:600;font-size:.82rem;text-decoration:none}
+.hero-foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.6rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.22);color:#d4e3ee;font-size:.9rem}
+.hero-foot ul{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.hero-foot li{display:flex;align-items:center;gap:.5rem}
+.hero-foot li::before{content:"";width:16px;height:16px;border-radius:50%;background:var(--orange) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.2 8.3l2.4 2.4 5-5' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100%;flex:none}
+.seal{display:flex;align-items:center;gap:.7rem;color:#fff}
+.seal b{font-family:var(--f-d);font-size:2.2rem;line-height:1;font-weight:700}
+.seal span{font-size:.78rem;line-height:1.2;color:#cfe0ec}
+.ill{position:absolute;right:1.2rem;top:1.1rem;z-index:3;font-size:.58rem;color:rgba(255,255,255,.7)}
+
+/* ticker */
+.ticker{overflow:hidden;background:var(--paper);padding:1.6rem 0;border-bottom:1px solid var(--line)}
+.ticker-track{display:flex;gap:2.4rem;width:max-content;animation:tick 40s linear infinite}
+.ticker-track span{font-family:var(--f-d);font-weight:700;text-transform:uppercase;font-size:1.5rem;letter-spacing:.02em;color:var(--navy);display:flex;align-items:center;gap:2.4rem;white-space:nowrap}
+.ticker-track span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--orange)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.about-media{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--navy)}
+.about-media img{width:100%;height:100%;object-fit:cover;transform:scale(1.12)}
+.about-badge{position:absolute;left:1rem;bottom:1rem;right:1rem;padding:1rem 1.2rem;border-radius:18px;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;gap:1rem}
+.about-badge b{font-family:var(--f-d);font-size:3rem;line-height:.9;color:var(--orange);font-weight:700}
+.about-badge span{font-size:.88rem;line-height:1.3;color:var(--ink)}
+.about-copy .disp{margin:.9rem 0 1.4rem}
+.about-copy p{color:var(--mute)}
+.vals{display:flex;flex-wrap:wrap;gap:.45rem;margin:1.6rem 0 2rem}
+.vals span{padding:.4rem .8rem;border-radius:999px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);font-size:.82rem;font-weight:500;color:var(--navy)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:clamp(2.5rem,5vw,4rem)}
+.stat{padding:1.6rem 1.4rem;border-radius:var(--r);background:var(--white);box-shadow:inset 0 0 0 1px var(--line)}
+.stat b{display:block;font-family:var(--f-d);font-weight:700;font-size:clamp(3rem,5vw,4.6rem);line-height:.9;color:var(--blue)}
+.stat b sup{font-size:.5em;color:var(--orange);vertical-align:top;margin-left:.1em}
+.stat>span{display:block;margin-top:.7rem;color:var(--mute);font-size:.88rem;line-height:1.3}
+
+/* systems: pinned horizontal rail */
+.sys{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.sys .tag{color:#9cc7e4}.sys .lead{color:#a9c1d3}
+.sys-pin{padding:clamp(3.5rem,7vw,6rem) 0 clamp(2.5rem,5vw,4rem)}
+.rail{display:flex;gap:18px;padding-inline:max(var(--g),calc((100vw - var(--max))/2));width:max-content;will-change:transform}
+.scard{position:relative;width:min(80vw,420px);flex:none;border-radius:26px;overflow:hidden;background:var(--navy2);box-shadow:inset 0 0 0 1px var(--line-d);display:flex;flex-direction:column}
+.scard-img{position:relative;aspect-ratio:11/9;overflow:hidden}
+.scard-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--e)}
+.scard:hover .scard-img img{transform:scale(1.07)}
+.scard-n{position:absolute;left:1rem;top:1rem;padding:.3rem .7rem;border-radius:999px;background:var(--orange);color:#fff}
+.scard-body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.8rem;flex:1}
+.scard h3{font-size:2.3rem;font-family:var(--f-d);text-transform:uppercase;font-weight:700;line-height:.95;margin:0}
+.scard p{margin:0;color:#a9c1d3;font-size:.92rem}
+.scard ul{margin:auto 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:.4rem}
+.scard li{padding:.3rem .7rem;border-radius:999px;font-size:.76rem;background:rgba(255,255,255,.08);color:#d7e6f1}
+.scard-cta{flex:none;width:min(70vw,340px);display:flex;flex-direction:column;justify-content:center;gap:1.2rem;padding:2rem}
+.sys-bar{margin:1.6rem max(var(--g),calc((100vw - var(--max))/2)) 0;height:2px;background:rgba(255,255,255,.12);border-radius:2px;overflow:hidden}
+.sys-bar i{display:block;height:100%;background:var(--orange);transform-origin:left;transform:scaleX(0)}
+.sys-note{margin:.9rem max(var(--g),calc((100vw - var(--max))/2)) 0;color:#7fa3bd;font-size:.7rem}
+
+/* products */
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pbox{padding:clamp(1.4rem,3vw,2.2rem);border-radius:var(--r);background:var(--white);box-shadow:inset 0 0 0 1px var(--line)}
+.pbox h3{font-family:var(--f-d);text-transform:uppercase;font-size:2rem;margin:0 0 1rem;color:var(--navy)}
+.pbox ul{list-style:none;margin:0;padding:0;display:grid}
+.pbox li{display:flex;justify-content:space-between;align-items:center;padding:.85rem 0;border-top:1px solid var(--line);font-weight:500}
+.pbox li:first-child{border-top:0}
+.pbox li::after{content:"→";color:var(--orange);transition:transform .4s var(--e)}
+.pbox li:hover::after{transform:translateX(5px)}
+
+/* process */
+.proc{background:var(--navy);color:#fff;position:relative}
+.proc .tag{color:#9cc7e4}
+.proc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,6vw,6rem)}
+.proc-sticky{position:sticky;top:7rem;align-self:start}
+.proc-sticky .lead{color:#a9c1d3;margin-top:1.2rem}
+.proc-sticky .btn{margin-top:2rem}
+.steps{position:relative;display:flex;flex-direction:column;gap:14px;padding-left:2.4rem}
+.steps::before{content:"";position:absolute;left:11px;top:10px;bottom:10px;width:2px;background:rgba(255,255,255,.14)}
+.steps-line{position:absolute;left:11px;top:10px;bottom:10px;width:2px;background:var(--orange);transform-origin:top;transform:scaleY(0)}
+.step{position:relative;padding:1.6rem 1.7rem;border-radius:var(--r);background:var(--navy2);box-shadow:inset 0 0 0 1px var(--line-d);opacity:.5;transition:opacity .5s,background .5s}
+.step.on{opacity:1;background:#0b3d60}
+.step::before{content:"";position:absolute;left:calc(-2.4rem + 5px);top:2rem;width:14px;height:14px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 2px rgba(255,255,255,.3);transition:background .4s,box-shadow .4s}
+.step.on::before{background:var(--orange);box-shadow:0 0 0 4px rgba(234,117,6,.35)}
+.step .n{color:var(--orange)}
+.step h3{font-family:var(--f-d);text-transform:uppercase;font-size:2.2rem;line-height:1;margin:.5rem 0 .6rem}
+.step p{margin:0;color:#b7cddd;font-size:.95rem}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:1rem}
+.phases div{padding:.7rem .8rem;border-radius:12px;background:rgba(255,255,255,.06);font-size:.8rem;line-height:1.3;color:#d7e6f1}
+.phases b{display:block;color:var(--orange);font-family:var(--f-m);font-weight:500;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.2rem}
+
+/* before / after */
+.ba{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:16/8.6;background:var(--navy);user-select:none;touch-action:pan-y;cursor:ew-resize;box-shadow:0 40px 90px -40px rgba(0,35,63,.6)}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba-after{clip-path:inset(0 0 0 50%)}
+.ba-line{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);box-shadow:0 0 0 1px rgba(0,35,63,.15)}
+.ba-knob{position:absolute;left:50%;top:50%;width:56px;height:56px;border-radius:50%;background:var(--orange);color:#fff;transform:translate(-50%,-50%);display:grid;place-items:center;font-size:1.1rem;letter-spacing:-.2em;box-shadow:0 10px 30px -8px rgba(0,0,0,.5),0 0 0 6px rgba(255,255,255,.35)}
+.ba-lab{position:absolute;top:1.1rem;padding:.4rem .8rem;border-radius:999px;background:rgba(0,35,63,.7);color:#fff;backdrop-filter:blur(8px)}
+.ba-lab.l{left:1.1rem}.ba-lab.r{right:1.1rem;background:var(--orange)}
+.ba-cap{position:absolute;left:1.1rem;bottom:1.1rem;right:1.1rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:#fff}
+.ba-cap span{padding:.45rem .8rem;border-radius:999px;background:rgba(0,35,63,.62);backdrop-filter:blur(8px)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba-points{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.ba-points div{padding:1.2rem 1.3rem;border-radius:20px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line)}
+.ba-points b{display:block;font-family:var(--f-d);text-transform:uppercase;font-size:1.5rem;color:var(--navy);line-height:1}
+.ba-points span{display:block;margin-top:.4rem;color:var(--mute);font-size:.88rem}
+
+/* gallery */
+.chips{display:flex;gap:.4rem;flex-wrap:wrap}
+.chip{padding:.55rem 1rem;border-radius:999px;border:0;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);font:500 .86rem var(--f-b);color:var(--navy);cursor:pointer;transition:background .3s,color .3s,transform .3s var(--e)}
+.chip:hover{transform:translateY(-2px)}
+.chip[aria-pressed="true"]{background:var(--navy);color:#fff}
+.gal{columns:4;column-gap:12px;margin-top:1.6rem}
+.gi{position:relative;display:block;width:100%;margin:0 0 12px;border-radius:16px;overflow:hidden;break-inside:avoid;border:0;padding:0;background:var(--navy);cursor:zoom-in}
+.gi img{width:100%;height:auto;transition:transform .9s var(--e),opacity .4s}
+.gi:hover img{transform:scale(1.06)}
+.gi span{position:absolute;left:.6rem;bottom:.6rem;padding:.25rem .6rem;border-radius:999px;background:rgba(0,35,63,.72);color:#fff;font-size:.56rem;backdrop-filter:blur(6px);opacity:0;transform:translateY(6px);transition:.4s var(--e)}
+.gi:hover span{opacity:1;transform:none}
+.gi.hide{display:none}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(0,20,36,.92);display:none;align-items:center;justify-content:center;padding:2rem}
+.lb.on{display:flex}
+.lb img{max-width:min(92vw,1100px);max-height:82vh;border-radius:16px;object-fit:contain}
+.lb button{position:absolute;top:1.2rem;right:1.2rem;width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:var(--navy);font-size:1.2rem;cursor:pointer}
+.lb p{position:absolute;bottom:1.4rem;left:0;right:0;text-align:center;color:#cfe0ec;margin:0}
+
+/* clients */
+.cl-rows{display:grid;gap:12px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.cl-row{display:flex;gap:12px;width:max-content;animation:tick 70s linear infinite}
+.cl-row.rev{animation-direction:reverse;animation-duration:85s}
+.cl-row span{padding:1rem 1.5rem;border-radius:16px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);font-family:var(--f-d);text-transform:uppercase;font-weight:600;font-size:1.15rem;color:var(--navy);white-space:nowrap}
+.cl-row span.pub{background:var(--navy);color:#fff}
+.cl-key{display:flex;gap:1.2rem;margin-top:1.4rem;color:var(--mute);font-size:.82rem}
+.cl-key i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:.4rem;background:var(--navy)}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,6rem)}
+.qa-item{border-top:1px solid var(--line)}.qa-item:last-child{border-bottom:1px solid var(--line)}
+.qa-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.3rem 0;background:none;border:0;text-align:left;font:600 1.08rem var(--f-b);color:var(--ink);cursor:pointer}
+.qa-q i{flex:none;width:34px;height:34px;border-radius:50%;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center;font-style:normal;color:var(--orange);transition:transform .5s var(--e),background .3s,color .3s}
+.qa-item.open .qa-q i{transform:rotate(45deg);background:var(--orange);color:#fff}
+.qa-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--e)}
+.qa-item.open .qa-a{grid-template-rows:1fr}
+.qa-a>div{overflow:hidden}
+.qa-a p{margin:0;padding:0 3rem 1.4rem 0;color:var(--mute)}
+
+/* contact */
+.contact{background:var(--navy);color:#fff;border-radius:30px 30px 0 0;margin-top:0}
+.contact .tag{color:#9cc7e4}
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem)}
+.c-info{display:flex;flex-direction:column;gap:14px;margin-top:2rem}
+.c-box{padding:1.3rem 1.5rem;border-radius:20px;background:var(--navy2);box-shadow:inset 0 0 0 1px var(--line-d)}
+.c-box .mono{color:#7fa3bd;display:block;margin-bottom:.4rem}
+.c-box a,.c-box p{margin:0;font-size:1.1rem;font-weight:500;text-decoration:none;line-height:1.35}
+.c-box a:hover{color:var(--orange)}
+.form{padding:clamp(1.4rem,3vw,2.2rem);border-radius:28px;background:var(--white);color:var(--ink);display:grid;gap:1rem;align-content:start}
+.form h3{font-family:var(--f-d);text-transform:uppercase;font-size:2.4rem;margin:0;line-height:.95;color:var(--navy)}
+.field{display:grid;gap:.35rem}
+.field label{font-size:.78rem;font-weight:600;color:var(--mute)}
+.field input,.field select,.field textarea{width:100%;padding:.85rem 1rem;border-radius:14px;border:0;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);font:inherit;color:var(--ink);outline:none;transition:box-shadow .3s}
+.field input:focus,.field select:focus,.field textarea:focus{box-shadow:inset 0 0 0 2px var(--blue)}
+.field textarea{min-height:110px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form small{color:var(--mute);font-size:.76rem}
+.foot{padding:2.2rem 0 2.6rem;background:var(--navy);color:#8fb0c8;font-size:.85rem;border-top:1px solid var(--line-d)}
+.foot .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+.foot .lg{background:#fff;border-radius:12px;padding:.4rem .8rem}.foot .lg img{height:34px}
+.fab{position:fixed;right:max(16px,2vw);bottom:max(16px,2vw);z-index:55;display:none}
+
+@media (max-width:980px){
+  .nav-links{position:fixed;inset:5.4rem var(--g) auto var(--g);flex-direction:column;padding:.8rem;border-radius:24px;background:rgba(255,255,255,.97);box-shadow:0 30px 60px -20px rgba(0,35,63,.5);opacity:0;pointer-events:none;transform:translateY(-10px);transition:opacity .35s,transform .45s var(--e)}
+  .menu-open .nav-links{opacity:1;pointer-events:auto;transform:none}
+  .nav-links a{padding:.9rem 1rem;font-size:1rem}
+  .burger{display:block}.nav .btn{display:none}
+  .top .mid{display:none}
+  .hero-row{grid-template-columns:1fr}.hcard{display:none}
+  .hero h1{font-size:10.4vw}
+  .about-grid,.proc-grid,.faq-grid,.c-grid,.prods{grid-template-columns:1fr}
+  .about-media{aspect-ratio:4/3.4}
+  .stats{grid-template-columns:1fr 1fr}
+  .proc-sticky{position:static}
+  .gal{columns:2}
+  .ba{aspect-ratio:4/4.4}.ba img{object-position:var(--m,50% 50%)}
+  .ba-points{grid-template-columns:1fr}
+  .rail{overflow-x:auto;width:auto;scroll-snap-type:x mandatory;padding-bottom:1rem}
+  .scard{scroll-snap-align:center}
+  .sys-bar{display:none}
+  .phases{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .hero-foot ul{gap:.7rem 1.2rem}.seal{display:none}
+  .fab{display:block}
+}
+@media (prefers-reduced-motion:reduce){.ticker-track,.cl-row{animation:none}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <span class="mid"><span>Atizapán de Zaragoza, Edo. de México</span><span>Lun a vie · horario por confirmar</span></span>
+  <span><a href="tel:+525526021731"><b>Tel.</b> 2602-1731</a> &nbsp;·&nbsp; <a href="tel:+525526022019">2602-2019</a> &nbsp;·&nbsp; <a href="mailto:ventas@impergab.com.mx">ventas@impergab.com.mx</a></span>
+</div></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#inicio" aria-label="Impergab, inicio"><img src="img-logo.png" alt="Impergab S.A. de C.V." width="100" height="34"></a>
+  <nav class="nav-links" aria-label="Principal">
+    <a href="#nosotros">Nosotros</a><a href="#sistemas">Sistemas</a><a href="#proceso">Servicios</a><a href="#obras">Obras</a><a href="#clientes">Clientes</a><a href="#contacto">Contacto</a>
+  </nav>
+  <a class="btn btn--or" href="#contacto"><span>Cotizar</span><i>→</i></a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i></button>
+</header>
+
+<main>
+<!-- ========== HERO ========== -->
+<section class="hero" id="inicio">
+  <div class="hero-frame">
+    <img class="hero-img" id="heroImg" src="img-hero.webp" alt="Cuadrilla aplicando impermeabilizante blanco sobre una azotea comercial al atardecer" fetchpriority="high">
+    <div class="hero-lens" id="lens" aria-hidden="true"><img class="hero-img" src="img-hero-antes.webp" alt="" loading="lazy"></div>
+    <div class="hero-shade"></div>
+    <div class="lens-ring" id="lensRing" aria-hidden="true"><b>Antes</b></div>
+    <span class="lens-hint" id="lensHint" aria-hidden="true">Pasa el cursor · así estaba antes</span>
+    <canvas id="rain" aria-hidden="true"></canvas>
+    <span class="ill mono">Imagen ilustrativa</span>
+    <div class="wrap hero-in">
+      <div class="hero-row">
+        <div>
+          <h1 class="disp" id="h1">Tu aliado en <em>impermeabilización</em></h1>
+          <p class="hero-sub">Sistemas de impermeabilización, tratamiento del concreto y superficies para industria, comercio, construcción institucional y casa habitación.</p>
+          <div class="hero-ctas">
+            <a class="btn btn--or" href="#contacto">Solicita un dictamen técnico <i>→</i></a>
+            <a class="btn btn--gh" href="tel:+525526021731">Llámanos · 2602-1731 <i>↗</i></a>
+          </div>
+        </div>
+        <aside class="hcard" aria-label="Aviso">
+          <img src="img-before.webp" alt="Azotea con filtraciones y encharcamientos">
+          <div><p>No dejes que una gotera se convierta en una reconstrucción.</p><a href="#antes">Mira el antes y después →</a></div>
+        </aside>
+      </div>
+      <div class="hero-foot">
+        <ul><li>Asesoría técnica</li><li>Dictamen y supervisión</li><li>Capital 100% mexicano</li></ul>
+        <div class="seal"><b>Desde 2002</b><span>Soluciones integrales<br>en impermeabilización</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tick"></div></div>
+
+<!-- ========== NOSOTROS ========== -->
+<section class="sec" id="nosotros">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-media" data-reveal>
+        <img src="img-termo-3.webp" alt="Personal de Impergab instalando membrana blanca sobre una azotea" data-par>
+        <div class="about-badge"><b id="yrs">24</b><span>años protegiendo azoteas, estacionamientos y estructuras de concreto.</span></div>
+      </div>
+      <div class="about-copy">
+        <span class="tag">Quiénes somos</span>
+        <h2 class="disp h2" data-split>Impermeabilizar bien es un trabajo de ingeniería</h2>
+        <p>IMPERGAB S.A. de C.V. es una empresa mexicana fundada en 2002 que ofrece servicios de impermeabilización, mantenimiento y proyectos arquitectónicos. Nació en Azcapotzalco y hoy opera desde el Estado de México con su equipo administrativo y operativo.</p>
+        <p>Trabajamos para la industria, el comercio y la construcción institucional y habitacional, adaptándonos a cada proyecto con compromiso de servicio, garantía de calidad y seguridad.</p>
+        <div class="vals" aria-label="Valores"><span>Respeto</span><span>Ética</span><span>Pasión</span><span>Integridad</span><span>Disciplina</span><span>Ambición positiva</span><span>Sencillez</span><span>Trabajo en equipo</span></div>
+        <a class="btn btn--bl" href="#proceso">Conoce nuestro proceso <i>↓</i></a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b><span data-count="24" id="yrs2">24</span><sup>+</sup></b><span>años de experiencia desde 2002</span></div>
+      <div class="stat"><b><span data-count="22">22</span></b><span>clientes de referencia entre empresas y gobierno</span></div>
+      <div class="stat"><b><span data-count="6">6</span></b><span>sistemas de impermeabilización</span></div>
+      <div class="stat"><b><span data-count="100">100</span><sup>%</sup></b><span>capital mexicano</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SISTEMAS ========== -->
+<section class="sys" id="sistemas">
+  <div class="sys-pin" id="sysPin">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:2.2rem"><div class="head-row"><div style="display:grid;gap:1rem"><span class="tag">Sistemas</span><h2 class="disp h2" data-split>Un sistema para cada superficie</h2></div><p class="lead">Elegimos el sistema según la superficie, el uso y la exposición. Desliza para recorrerlos.</p></div></div>
+    </div>
+    <div class="rail" id="rail">
+      <article class="scard">
+        <div class="scard-img"><img src="img-acrilico-2.webp" alt="Azotea impermeabilizada con sistema acrílico" loading="lazy"><span class="scard-n mono">01</span></div>
+        <div class="scard-body"><h3>Acrílico</h3><p>Impermeabilización en capas sobre losas y azoteas, con acabado reflectivo que ayuda a bajar la temperatura de la superficie.</p><ul><li>Azoteas</li><li>Losas de concreto</li><li>Casa y comercio</li></ul></div>
+      </article>
+      <article class="scard">
+        <div class="scard-img"><img src="img-poliuretano-3.webp" alt="Estacionamiento con sistema de poliuretano" loading="lazy"><span class="scard-n mono">02</span></div>
+        <div class="scard-body"><h3>Poliuretano Auto-Gard</h3><p>Recubrimiento continuo para superficies con tránsito, como estacionamientos y rampas, con marcado de cajones integrado.</p><ul><li>Estacionamientos</li><li>Tránsito vehicular</li><li>Rampas</li></ul></div>
+      </article>
+      <article class="scard">
+        <div class="scard-img"><img src="img-termo-2.webp" alt="Instalación de membrana termoplástica blanca" loading="lazy"><span class="scard-n mono">03</span></div>
+        <div class="scard-body"><h3>Termoplásticos</h3><p>Membranas en rollo que se instalan y sueldan en obra, pensadas para grandes superficies y cubiertas industriales.</p><ul><li>Naves y centros comerciales</li><li>Grandes áreas</li><li>Cubiertas metálicas</li></ul></div>
+      </article>
+      <article class="scard">
+        <div class="scard-img"><img src="img-prefabricado-3.webp" alt="Azotea comercial con sistema prefabricado" loading="lazy"><span class="scard-n mono">04</span></div>
+        <div class="scard-body"><h3>Prefabricado</h3><p>Membranas prefabricadas que llegan listas para instalarse, con espesor controlado y juntas selladas.</p><ul><li>Azoteas comerciales</li><li>Obra institucional</li><li>Espesor uniforme</li></ul></div>
+      </article>
+      <article class="scard">
+        <div class="scard-img"><img src="img-poliuretano-1b.webp" alt="Piso de estacionamiento con mortero epóxico" loading="lazy"><span class="scard-n mono">05</span></div>
+        <div class="scard-body"><h3>Mortero epóxico</h3><p>Acabado de alta resistencia para pisos que reciben cargas, tránsito y limpieza frecuente.</p><ul><li>Pisos industriales</li><li>Alta resistencia</li><li>Fácil limpieza</li></ul></div>
+      </article>
+      <article class="scard">
+        <div class="scard-img"><img src="img-cementoso-1.webp" alt="Aplicación de impermeabilizante cementoso con aspersor" loading="lazy"><span class="scard-n mono">06</span></div>
+        <div class="scard-body"><h3>Cementoso</h3><p>Impermeabilización a base de cemento para elementos de concreto y mampostería, aplicable con llana o aspersor.</p><ul><li>Muros y cisternas</li><li>Cimentaciones</li><li>Concreto</li></ul></div>
+      </article>
+      <div class="scard scard-cta"><span class="tag">¿No sabes cuál?</span><h3>Te lo definimos con un dictamen</h3><p>Revisamos la superficie o los planos y proponemos el sistema adecuado.</p><a class="btn btn--or" href="#contacto">Pedir dictamen <i>→</i></a></div>
+    </div>
+    <div class="sys-bar" aria-hidden="true"><i id="sysBar"></i></div>
+    <p class="sys-note mono">Descripciones generales de cada sistema · fichas técnicas por confirmar con Impergab</p>
+  </div>
+</section>
+
+<!-- ========== PRODUCTOS ========== -->
+<section class="sec" id="productos">
+  <div class="wrap">
+    <div class="head"><span class="tag">Productos</span><div class="head-row"><h2 class="disp h2" data-split>Todo lo que necesita<br>tu superficie</h2><p class="lead">Además de los sistemas, suministramos productos para el tratamiento del concreto y el cuidado de las superficies.</p></div></div>
+    <div class="prods">
+      <div class="pbox" data-reveal><h3>Sistemas</h3><ul><li>Impermeabilizantes</li><li>Productos y aditivos para el concreto</li><li>Recubrimientos</li><li>Selladores</li></ul></div>
+      <div class="pbox" data-reveal><h3>Complementos</h3><ul><li>Rellenos para juntas</li><li>Protectores de superficies</li><li>Especialidades asfálticas</li><li>Placas de aislamiento térmico</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICIOS / PROCESO ========== -->
+<section class="sec proc" id="proceso">
+  <div class="wrap">
+    <div class="proc-grid">
+      <div class="proc-sticky">
+        <span class="tag">Servicios</span>
+        <h2 class="disp h2" data-split style="margin-top:1rem">Acompañamos<br>tu obra de<br>principio a fin</h2>
+        <p class="lead">Cuatro etapas para que el sistema se elija bien, se aplique bien y se compruebe que quedó bien.</p>
+        <a class="btn btn--or" href="#contacto">Hablar con un asesor <i>→</i></a>
+      </div>
+      <div class="steps" id="steps">
+        <div class="steps-line" id="stepsLine"></div>
+        <div class="step on"><span class="mono n">Paso 01</span><h3>Asesoría técnica</h3><p>Visita y apoyo para elaborar propuestas técnicas que canalizan los sistemas y productos según lo que necesita cada elemento del proyecto.</p></div>
+        <div class="step"><span class="mono n">Paso 02</span><h3>Dictamen técnico</h3><p>Revisamos las condiciones y la superficie, o analizamos los planos, para elaborar un dictamen con el respaldo de todo el equipo durante cualquier etapa.</p></div>
+        <div class="step"><span class="mono n">Paso 03</span><h3>Supervisión</h3><p>La aplicación se supervisa en tres fases para que el sistema funcione como se diseñó.</p><div class="phases"><div><b>Antes</b>Preparación de la superficie y detalles de albañilería.</div><div><b>Durante</b>Aplicación correcta con mano de obra calificada.</div><div><b>Después</b>Certificación de que la instalación quedó bien hecha.</div></div></div>
+        <div class="step"><span class="mono n">Paso 04</span><h3>Coordinación</h3><p>Trabajamos con los residentes de obra y con nuestro departamento de ingeniería para documentar: reportes, estimaciones y fotografías de avance, conforme a lo aprobado por el cliente.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ANTES / DESPUÉS ========== -->
+<section class="sec" id="antes">
+  <div class="wrap">
+    <div class="head"><span class="tag">El resultado</span><div class="head-row"><h2 class="disp h2" data-split>De la gotera<br>a la azotea sellada</h2><p class="lead">Arrastra el control para comparar una azotea antes y después de aplicar un sistema.</p></div></div>
+    <div class="ba" id="ba" style="--m:50% 50%">
+      <img src="img-before.webp" alt="Azotea antes: concreto envejecido, filtraciones y encharcamientos" loading="lazy">
+      <img class="ba-after" id="baAfter" src="img-after.webp" alt="Azotea después: membrana blanca continua y seca" loading="lazy">
+      <div class="ba-line" id="baLine"></div><div class="ba-knob" id="baKnob" aria-hidden="true">‹›</div>
+      <span class="ba-lab l mono">Antes</span><span class="ba-lab r mono">Después</span>
+      <div class="ba-cap mono"><span>Imágenes ilustrativas</span></div>
+      <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Comparar antes y después">
+    </div>
+    <div class="ba-points">
+      <div><b>Se detecta</b><span>Humedad, grietas y puntos de filtración en la superficie.</span></div>
+      <div><b>Se prepara</b><span>Reparación de la base y detalles de albañilería antes de aplicar.</span></div>
+      <div><b>Se protege</b><span>Sistema continuo, con aplicación supervisada y comprobada.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== OBRAS ========== -->
+<section class="sec" id="obras" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><span class="tag">Obras</span><div class="head-row"><h2 class="disp h2" data-split>Trabajo real,<br>en obra real</h2><div class="chips" id="chips" role="group" aria-label="Filtrar por sistema"></div></div></div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto de obra"><button id="lbX" aria-label="Cerrar">✕</button><img id="lbImg" alt=""><p id="lbCap" class="mono"></p></div>
+
+<!-- ========== CLIENTES ========== -->
+<section class="sec" id="clientes" style="padding-top:clamp(2rem,4vw,3rem)">
+  <div class="wrap"><div class="head"><span class="tag">Clientes</span><h2 class="disp h2" data-split>Confían en nosotros</h2></div></div>
+  <div class="cl-rows" id="cl"></div>
+  <div class="wrap"><div class="cl-key mono"><span><i></i>Sector público y educación</span><span>Empresas y constructoras</span></div></div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="sec" id="preguntas" style="padding-top:0">
+  <div class="wrap"><div class="faq-grid">
+    <div class="head" style="margin:0"><span class="tag">Preguntas frecuentes</span><h2 class="disp h2" data-split>¿Tienes<br>dudas?</h2><p class="lead">Si no encuentras tu respuesta, llámanos y un asesor te atiende.</p></div>
+    <div id="qa">
+      <div class="qa-item"><button class="qa-q" aria-expanded="false">¿Cómo sé qué sistema necesita mi azotea o estacionamiento?<i>+</i></button><div class="qa-a"><div><p>Depende de la superficie, el uso y la exposición. Por eso hacemos una visita y un dictamen técnico: revisamos las condiciones o los planos y te proponemos el sistema adecuado.</p></div></div></div>
+      <div class="qa-item"><button class="qa-q" aria-expanded="false">¿Atienden casa habitación o solo empresas?<i>+</i></button><div class="qa-a"><div><p>Atendemos industria, comercio, construcción institucional y casa habitación, con soluciones integrales para cada caso.</p></div></div></div>
+      <div class="qa-item"><button class="qa-q" aria-expanded="false">¿Supervisan la aplicación?<i>+</i></button><div class="qa-a"><div><p>Sí. La supervisión cubre tres fases: antes (preparación de la superficie), durante (aplicación con mano de obra calificada) y después (certificación de que quedó correctamente instalado).</p></div></div></div>
+      <div class="qa-item"><button class="qa-q" aria-expanded="false">¿Pueden trabajar con los residentes de obra?<i>+</i></button><div class="qa-a"><div><p>Sí. Nos coordinamos con los residentes y con nuestro departamento de ingeniería para documentar avances con reportes, estimaciones y fotografías.</p></div></div></div>
+      <div class="qa-item"><button class="qa-q" aria-expanded="false">¿Qué formas de pago aceptan?<i>+</i></button><div class="qa-a"><div><p>Aceptamos tarjetas de crédito y débito. Para otras formas de pago o facturación, consulta con nuestro equipo de ventas.</p></div></div></div>
+      <div class="qa-item"><button class="qa-q" aria-expanded="false">¿Cuánto cuesta y cuánto tarda?<i>+</i></button><div class="qa-a"><div><p>Depende de la superficie y del sistema elegido. Después del dictamen te entregamos una propuesta técnica con alcance y costo. Los tiempos y garantías exactos están por confirmar con Impergab.</p></div></div></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ========== CONTACTO ========== -->
+<section class="sec contact" id="contacto">
+  <div class="wrap"><div class="c-grid">
+    <div>
+      <span class="tag">Contacto</span>
+      <h2 class="disp h2" data-split style="margin-top:1rem">Cotiza tu<br>proyecto</h2>
+      <div class="c-info">
+        <div class="c-box"><span class="mono">Teléfonos</span><a href="tel:+525526021731">2602-1731</a> &nbsp;/&nbsp; <a href="tel:+525526022019">2602-2019</a></div>
+        <div class="c-box"><span class="mono">Correo</span><a href="mailto:ventas@impergab.com.mx">ventas@impergab.com.mx</a><br><a href="mailto:impergab@yahoo.com.mx" style="font-size:.95rem;color:#9cc7e4">impergab@yahoo.com.mx</a></div>
+        <div class="c-box"><span class="mono">Sucursal</span><p>Av. Lago de Guadalupe No. 998, Mz-20 Lt-05, Col. Bosques de Ixtacala, Atizapán de Zaragoza, Edo. de México, C.P. 52919</p><a href="https://www.google.com/maps/search/?api=1&query=Av.+Lago+de+Guadalupe+998+Bosques+de+Ixtacala+Atizapan+de+Zaragoza" target="_blank" rel="noopener" style="display:inline-block;margin-top:.5rem;color:var(--orange);font-size:.95rem">Cómo llegar ↗</a></div>
+        <div class="c-box"><span class="mono">Pagos</span><p style="font-size:1rem">Aceptamos tarjetas de crédito y débito</p></div>
+      </div>
+    </div>
+    <form class="form" id="form" novalidate>
+      <h3>Déjanos tus datos</h3>
+      <div class="two"><div class="field"><label for="f1">Nombre</label><input id="f1" required autocomplete="name"></div><div class="field"><label for="f2">Teléfono</label><input id="f2" type="tel" autocomplete="tel"></div></div>
+      <div class="field"><label for="f3">Correo electrónico</label><input id="f3" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="f4">¿Qué necesitas impermeabilizar?</label><select id="f4"><option>Azotea o losa</option><option>Estacionamiento o rampa</option><option>Cubierta metálica o nave</option><option>Muros, cisterna o cimentación</option><option>Piso industrial</option><option>No lo sé, necesito asesoría</option></select></div>
+      <div class="field"><label for="f5">Mensaje</label><textarea id="f5" placeholder="Cuéntanos del proyecto, la ubicación y la superficie aproximada"></textarea></div>
+      <button class="btn btn--or" type="submit" style="justify-self:start">Enviar solicitud <i>→</i></button>
+      <small id="fmsg">Se abrirá tu correo con el mensaje listo para enviar a ventas@impergab.com.mx.</small>
+    </form>
+  </div></div>
+</section>
+</main>
+<footer class="foot"><div class="wrap"><span class="lg"><img src="img-logo.png" alt="Impergab S.A. de C.V."></span><span>© <span id="yr">2026</span> IMPERGAB S.A. de C.V. · Impermeabilización y tratamiento del concreto</span></div></footer>
+<a class="btn btn--or fab" href="tel:+525526021731" aria-label="Llamar a Impergab">Llamar <i>↗</i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+  'use strict';
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const yrs = new Date().getFullYear() - 2002;
+  ['#yrs', '#yrs2'].forEach(s => { const e = $(s); if (e) { e.textContent = yrs; if (e.dataset.count) e.dataset.count = yrs; } });
+  $('#yr').textContent = new Date().getFullYear();
+
+  /* ticker + clients + gallery data */
+  const T = ['Impermeabilizantes', 'Aditivos para concreto', 'Recubrimientos', 'Selladores', 'Rellenos para juntas', 'Protectores de superficies', 'Especialidades asfálticas', 'Aislamiento térmico'];
+  $('#tick').innerHTML = [...T, ...T].map(t => `<span>${t}</span>`).join('');
+  const PUB = ['MUNICIPIO DE CUAUTITLAN IZCALLI', 'MUNICIPIO DE HUIXQUILUCAN', 'OPERAGUA IZCALLI O.P.D.M.', 'PREPARATORIA OFICIAL Nº 126', 'PREPARATORIA OFICIAL No. 103'];
+  const CL = ['ARES TELECOMUNICACIONES', 'CONCEPTO ARQUITECTURA', 'DOUBLE CLICK', 'GREEN HOME INMOBILIARIA Y CONSTRUCTORA MEXICO', 'GRUPO CORPORATIVO DE ARQUITECTOS', 'GRUPO EMPRESARIAL DE PUENTES Y ESTRUCTURAS', 'IDENTIDAD Y DISEÑO EN CONSTRUCCION AG', 'IMPERMOR', 'IMPERSELL', 'J & J SOLUCIONES EN CONSTRUCCION', 'JRIO SOCIOS', 'PAVIMENTOS Y CONSTRUCCIONES INDUSTRIALES HIDALGO', 'SICCYMSA SERVICIOS INTEGRALES DE LA CONSTRUCCION', 'TEA CONSTRUCCIONES', 'VIDOM ALUMINIO', 'ZYANIA TELECOMUNICACIONES', 'MEXICANA PACIFIC'];
+  const mk = (arr, cls) => [...arr, ...arr].map(n => `<span class="${PUB.includes(n) ? 'pub' : ''}">${n.replace(/ ?(S\.?A\.? ?DE C\.?V\.?)$/i, '')}</span>`).join('');
+  const half = Math.ceil((PUB.length + CL.length) / 2), ALL = [...PUB, ...CL];
+  $('#cl').innerHTML = `<div class="cl-row">${mk(ALL.slice(0, half))}</div><div class="cl-row rev">${mk(ALL.slice(half))}</div>`;
+
+  const G = [['acrilico', 'Acrílico', [1, 2, 3, 4]], ['poliuretano', 'Poliuretano Auto-Gard', ['1', '1b', '2', '2b', '3', '4']], ['termo', 'Termoplásticos', [1, 2, 3, 4]], ['prefabricado', 'Prefabricado', [1, 2, 3, 4]], ['cementoso', 'Cementoso', [1, 2]]];
+  const gal = $('#gal'); const ph = [];
+  G.forEach(([k, label, ids]) => ids.forEach(i => ph.push({ k, label, src: `img-${k}-${i}.webp` })));
+  // interleave so neighbouring photos differ
+  const order = []; let mx = Math.max(...G.map(g => g[2].length));
+  for (let i = 0; i < mx; i++) G.forEach(([k]) => { const arr = ph.filter(p => p.k === k); if (arr[i]) order.push(arr[i]); });
+  gal.innerHTML = order.map(p => `<button class="gi" data-k="${p.k}" data-l="${p.label}"><img src="${p.src}" alt="Obra de impermeabilización, sistema ${p.label}" loading="lazy"><span class="mono">${p.label}</span></button>`).join('');
+  const chips = $('#chips'); chips.innerHTML = `<button class="chip" aria-pressed="true" data-k="all">Todas</button>` + G.map(([k, l]) => `<button class="chip" aria-pressed="false" data-k="${k}">${l}</button>`).join('');
+  chips.addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; $$('.chip', chips).forEach(c => c.setAttribute('aria-pressed', c === b)); $$('.gi', gal).forEach(g => g.classList.toggle('hide', b.dataset.k !== 'all' && g.dataset.k !== b.dataset.k)); window.ScrollTrigger && ScrollTrigger.refresh(); });
+  const lb = $('#lb'), lbImg = $('#lbImg');
+  gal.addEventListener('click', e => { const g = e.target.closest('.gi'); if (!g) return; lbImg.src = $('img', g).src; lbImg.alt = $('img', g).alt; $('#lbCap').textContent = 'Sistema ' + g.dataset.l; lb.classList.add('on'); });
+  const closeLb = () => lb.classList.remove('on'); $('#lbX').addEventListener('click', closeLb); lb.addEventListener('click', e => { if (e.target === lb) closeLb(); }); addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+
+  /* FAQ */
+  $$('.qa-q').forEach(b => b.addEventListener('click', () => { const it = b.closest('.qa-item'); const o = !it.classList.contains('open'); it.classList.toggle('open', o); b.setAttribute('aria-expanded', o); setTimeout(() => window.ScrollTrigger && ScrollTrigger.refresh(), 600); }));
+
+  /* before / after */
+  const ba = $('#ba'), baR = $('#baRange'), baA = $('#baAfter'), baL = $('#baLine'), baK = $('#baKnob');
+  const setBA = v => { baA.style.clipPath = `inset(0 0 0 ${v}%)`; baL.style.left = baK.style.left = v + '%'; };
+  baR.addEventListener('input', () => setBA(+baR.value)); setBA(50);
+  if (!reduce && 'IntersectionObserver' in window) { const io = new IntersectionObserver(es => { if (es[0].isIntersecting) { io.disconnect(); const o = { v: 50 }; gsap.timeline().to(o, { v: 82, duration: 1.1, ease: 'power2.inOut', onUpdate: () => { baR.value = o.v; setBA(o.v); } }).to(o, { v: 50, duration: 1.2, ease: 'power2.inOut', onUpdate: () => { baR.value = o.v; setBA(o.v); } }); } }, { threshold: .6 }); window.gsap && io.observe(ba); }
+
+  /* form -> mailto */
+  $('#form').addEventListener('submit', e => { e.preventDefault(); const n = $('#f1').value.trim(), m = $('#f3').value.trim(); if (!n || !m) { $('#fmsg').textContent = 'Escribe tu nombre y correo para continuar.'; return; }
+    const body = `Nombre: ${n}\nTeléfono: ${$('#f2').value}\nCorreo: ${m}\nSuperficie: ${$('#f4').value}\n\n${$('#f5').value}`;
+    location.href = 'mailto:ventas@impergab.com.mx?subject=' + encodeURIComponent('Solicitud de cotización') + '&body=' + encodeURIComponent(body); });
+
+  /* menu */
+  const nav = $('#nav'), burger = $('#burger');
+  burger.addEventListener('click', () => { const o = nav.classList.toggle('menu-open'); burger.setAttribute('aria-expanded', o); });
+  const onScrollNav = () => nav.classList.toggle('up', scrollY > 60); addEventListener('scroll', onScrollNav, { passive: true }); onScrollNav();
+
+  /* rain that beads on the membrane */
+  (function rain(){
+    const cv = $('#rain'), ctx = cv.getContext('2d'); let W = 0, H = 0, dpr = Math.min(devicePixelRatio || 1, 2), drops = [], rip = [], visible = true;
+    const hero = $('.hero-frame');
+    function size(){ W = hero.clientWidth; H = hero.clientHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+    size(); addEventListener('resize', size);
+    const spawn = () => ({ x: Math.random() * W, y: -20 - Math.random() * 200, v: 7 + Math.random() * 6, l: 12 + Math.random() * 18, ty: H * (.58 + Math.random() * .36) });
+    for (let i = 0; i < 46; i++) { const d = spawn(); d.y = Math.random() * H * .6; drops.push(d); }
+    let mxp = null; hero.addEventListener('pointermove', e => { const r = hero.getBoundingClientRect(); mxp = [e.clientX - r.left, e.clientY - r.top]; if (Math.random() < .35 && mxp[1] > H * .5) rip.push({ x: mxp[0], y: mxp[1], r: 2, a: .5 }); }, { passive: true });
+    function frame(){
+      if (visible && !document.hidden) {
+        ctx.clearRect(0, 0, W, H);
+        ctx.lineCap = 'round';
+        drops.forEach((d, i) => { d.y += d.v; ctx.strokeStyle = 'rgba(210,235,250,.5)'; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(d.x, d.y - d.l); ctx.lineTo(d.x, d.y); ctx.stroke();
+          if (d.y >= d.ty) { rip.push({ x: d.x, y: d.ty, r: 2, a: .55 }); drops[i] = spawn(); } });
+        rip.forEach(p => { p.r += .9; p.a -= .014; ctx.strokeStyle = `rgba(230,244,252,${Math.max(0, p.a).toFixed(3)})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.ellipse(p.x, p.y, p.r * 2.2, p.r * .65, 0, 0, 7); ctx.stroke(); });
+        rip = rip.filter(p => p.a > 0);
+      }
+      requestAnimationFrame(frame);
+    }
+    if ('IntersectionObserver' in window) new IntersectionObserver(es => { visible = es[0].isIntersecting; }).observe(hero);
+    if (reduce) { ctx.clearRect(0, 0, W, H); } else requestAnimationFrame(frame);
+  })();
+
+  /* lente antes / después sobre el hero */
+  (function lens(){
+    const frame = $('.hero-frame'), layer = $('#lens'), ring = $('#lensRing'), hint = $('#lensHint');
+    if (!frame || !layer) return;
+    if (reduce) { layer.remove(); ring && ring.remove(); hint && hint.remove(); return; }
+    const fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
+    let W = 0, H = 0, x = 0, y = 0, tx = 0, ty = 0, r = 0, tr = 0, on = false, vis = true, run = false;
+    const t0 = performance.now();
+    const R = () => fine ? Math.max(130, Math.min(250, W * .16)) : W * .42;
+    function size(){ W = frame.clientWidth; H = frame.clientHeight; if (!on) { tx = x = W * .6; ty = y = H * .72; } }
+    size(); addEventListener('resize', size);
+    function tick(){
+      if (!fine) { const t = (performance.now() - t0) / 1000; tx = W * (.5 + .34 * Math.sin(t * .42)); ty = H * (.74 + .07 * Math.sin(t * .83)); tr = vis ? R() : 0; }
+      x += (tx - x) * .15; y += (ty - y) * .15; r += (tr - r) * .11;
+      layer.style.setProperty('--lx', x.toFixed(1) + 'px');
+      layer.style.setProperty('--ly', y.toFixed(1) + 'px');
+      layer.style.setProperty('--lr', (r * 1.5).toFixed(1) + 'px');
+      if (ring) { ring.style.setProperty('--lx', x.toFixed(1) + 'px'); ring.style.setProperty('--ly', y.toFixed(1) + 'px'); ring.style.setProperty('--d', (r * 1.92).toFixed(1) + 'px'); ring.style.opacity = r > 10 ? Math.min(1, (r - 10) / 60).toFixed(2) : '0'; }
+      if (r < .6 && tr === 0) { run = false; return; }
+      requestAnimationFrame(tick);
+    }
+    const start = () => { if (!run) { run = true; requestAnimationFrame(tick); } };
+    if (fine) {
+      const move = e => { if (e.pointerType === 'touch') return; const b = frame.getBoundingClientRect(); tx = e.clientX - b.left; ty = e.clientY - b.top; if (!on) { on = true; tr = R(); } start(); };
+      frame.addEventListener('pointerenter', e => { if (e.pointerType === 'touch') return; on = true; tr = R(); hint && hint.classList.add('off'); start(); });
+      frame.addEventListener('pointermove', move, { passive: true });
+      frame.addEventListener('pointerleave', () => { on = false; tr = 0; start(); });
+    } else start();
+    if ('IntersectionObserver' in window) new IntersectionObserver(es => { vis = es[0].isIntersecting; if (vis && !fine) start(); }).observe(frame);
+  })();
+
+  /* smooth scroll + anchors */
+  let lenis = null;
+  if (!reduce && window.Lenis) {
+    lenis = new Lenis({ lerp: .09 });
+    if (window.gsap) { window.ScrollTrigger && lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add(t => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0); }
+    else { const raf = t => { lenis.raf(t); requestAnimationFrame(raf); }; requestAnimationFrame(raf); }
+  }
+  $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => { const id = a.getAttribute('href'); const el = id.length > 1 && document.querySelector(id); if (!el) return; e.preventDefault(); nav.classList.remove('menu-open'); burger.setAttribute('aria-expanded', 'false');
+    if (lenis) lenis.scrollTo(el, { offset: id === '#inicio' ? 0 : -70, duration: 1.4 }); else el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); }));
+
+  if (reduce || !window.gsap || !window.ScrollTrigger) { $$('[data-count]').forEach(e => e.textContent = e.dataset.count); return; }
+  gsap.registerPlugin(ScrollTrigger); const hasSplit = !!window.SplitText; if (hasSplit) gsap.registerPlugin(SplitText);
+  const whenFonts = document.fonts && document.fonts.load ? Promise.all([document.fonts.load('700 100px "Barlow Condensed"'), document.fonts.ready]).catch(() => {}) : Promise.resolve();
+  whenFonts.then(() => { setTimeout(() => ScrollTrigger.refresh(), 300); });
+
+  // hero entrance
+  whenFonts.then(() => {
+    if (hasSplit) SplitText.create('#h1', { type: 'lines', mask: 'lines', linesClass: 'ln', autoSplit: true, onSplit: s => gsap.from(s.lines, { yPercent: 110, duration: 1.2, ease: 'power4.out', stagger: .1, delay: .1 }) });
+  });
+  gsap.from('.hero-sub, .hero-ctas, .hcard, .hero-foot', { y: 26, opacity: 0, duration: 1, ease: 'power3.out', stagger: .1, delay: .55 });
+  gsap.from('.nav', { y: -30, opacity: 0, duration: 1, ease: 'power3.out', delay: .3 });
+  gsap.to('.hero-img', { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+
+  // nav active
+  $$('.nav-links a').forEach(a => { const el = $(a.getAttribute('href')); if (el) ScrollTrigger.create({ trigger: el, start: 'top 55%', end: 'bottom 55%', onToggle: s => a.classList.toggle('on', s.isActive) }); });
+
+  // headings
+  whenFonts.then(() => $$('[data-split]').forEach(el => { if (hasSplit) SplitText.create(el, { type: 'lines', mask: 'lines', linesClass: 'ln', autoSplit: true, onSplit: s => gsap.from(s.lines, { yPercent: 110, duration: 1.1, ease: 'power4.out', stagger: .08, scrollTrigger: { trigger: el, start: 'top 88%', once: true } }) }); }));
+  $$('.tag').forEach(t => gsap.from(t, { opacity: 0, y: 10, duration: .8, ease: 'power3.out', scrollTrigger: { trigger: t, start: 'top 92%', once: true } }));
+  $$('[data-reveal]').forEach(el => gsap.from(el, { y: 50, opacity: 0, duration: 1.1, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } }));
+  $$('[data-par]').forEach(img => gsap.fromTo(img, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } }));
+  $$('[data-count]').forEach(el => { const to = +el.dataset.count, o = { v: 0 }; el.textContent = '0'; gsap.to(o, { v: to, duration: 1.8, ease: 'power2.out', onUpdate: () => el.textContent = Math.round(o.v), scrollTrigger: { trigger: el, start: 'top 90%', once: true } }); });
+  gsap.from('.stat', { y: 40, opacity: 0, duration: .9, ease: 'power3.out', stagger: .08, scrollTrigger: { trigger: '.stats', start: 'top 88%', once: true } });
+  gsap.from('.pbox li', { x: -20, opacity: 0, duration: .7, ease: 'power3.out', stagger: .06, scrollTrigger: { trigger: '.prods', start: 'top 82%', once: true } });
+
+  // systems: pinned horizontal travel on desktop
+  ScrollTrigger.matchMedia({
+    '(min-width: 981px)': () => {
+      const rail = $('#rail'), bar = $('#sysBar');
+      const dist = () => Math.max(0, rail.scrollWidth - innerWidth + parseFloat(getComputedStyle(rail).paddingLeft) );
+      gsap.to(rail, { x: () => -dist(), ease: 'none', scrollTrigger: { trigger: '#sysPin', start: 'top top', end: () => '+=' + dist(), pin: true, scrub: .6, invalidateOnRefresh: true, anticipatePin: 1, onUpdate: s => { bar.style.transform = `scaleX(${s.progress.toFixed(4)})`; } } });
+    }
+  });
+
+  // process: active step + progress line
+  const steps = $$('.step'), line = $('#stepsLine');
+  steps.forEach((s, i) => ScrollTrigger.create({ trigger: s, start: 'top 62%', end: 'bottom 62%', onToggle: st => { if (st.isActive) steps.forEach((x, n) => x.classList.toggle('on', n === i)); } }));
+  gsap.to(line, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '#steps', start: 'top 60%', end: 'bottom 60%', scrub: true } });
+
+  gsap.from('.ba-points div', { y: 30, opacity: 0, duration: .8, ease: 'power3.out', stagger: .1, scrollTrigger: { trigger: '.ba-points', start: 'top 90%', once: true } });
+  gsap.from('.c-box, .form', { y: 40, opacity: 0, duration: 1, ease: 'power3.out', stagger: .08, scrollTrigger: { trigger: '.c-grid', start: 'top 80%', once: true } });
+  addEventListener('load', () => ScrollTrigger.refresh());
+})();
+</script>
+</body>
+</html>
